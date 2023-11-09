@@ -1,0 +1,44 @@
+:root{ 
+    --color-brand: #819857;
+    --color-primary-dark: #31261a;
+    --color-privary-light: #faf4ea;
+}
+body{
+    color:var(--color-primary-dark)
+}
+ul{
+    list-style-type: none;
+}
+.hero-title{color:blanchedalmond;}
+.hero-title .accent{ color: var(--);}
+.button{
+    color:whitesmoke;
+    background-color: #819857;
+    border: 2px solid #819857;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:hover {
+    color: black;
+    background-color: transparent;
+}
+.button:active{
+    background-color: black;
+    color: white;
+}
+.menu-header{
+    color: blanchedalmond;
+}
+.menu-header:hover{
+    color: #819857;
+}
+.benefits-list{
+background-color: var(--color-brand);
+color: blanchedalmond;
+}
+.section-title{
+    color: rgb(24, 24, 24);
+}
+.section-title span{
+color: var(--color-brand);
+}

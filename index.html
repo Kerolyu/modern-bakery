@@ -3,34 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Bakery</title>
+    <title>Modern Bakeries</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="">
-          <img src="./images/logo bakery.svg" alt="Logo" />
+        <a href="index.html">
+          <img src="./images/logo_bakery.svg" alt="Logo" />
         </a>
         <ul>
-          <li><a href="#">Franchise</a></li>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a class="menu-header" href="#traditions-section">Our traditions</a>
+          </li>
+          <li><a class="menu-header" href="#chef-section">Our chefs</a></li>
+          <li>
+            <a class="menu-header" href="#franchise-section">Franchise Types</a>
+          </li>
+          <li><a class="menu-header" href="#contact-section">Contact</a></li>
         </ul>
       </nav>
-      <button type="button">Book a call</button>
+      <button type="button" class="button">Book a call</button>
     </header>
     <main>
       <section>
-        <h1>Modern bakery</h1>
+        <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="benefits-list">
           <li>Market demand</li>
           <li>Reasonable prices</li>
           <li>10 years of experience</li>
         </ul>
-        <h2>New format</h2>
+        <h2 class="section-title">Our Best <span>Bakers</span></h2>
         <p>
           <span>shop bakery</span> - is a new type of bakery that took
           principles of traditional bakery and made it work.
@@ -42,33 +47,35 @@
         </p>
         <img src="./images/baker-min.jpg" alt="BakerMan" />
       </section>
-      <section>
-        <h2>Our chefs</h2>
-        <li>
-          <article>
-            <h3>Niomi</h3>
-            <p>Hi I'm Niomi</p>
-            <p>
-              I've been a baker for more than 10 years and I love working for
-              Modern bakery
-            </p>
-            <p>I will be sure to make something deliciuos for you!</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Adam</h3>
-            <p>Hi, I'm Adam</p>
-            <p>My grandmother has made me fall in love with baking</p>
-            <p>
-              Modern bakery is the place that respects the old traditions while
-              remaining modern
-            </p>
-          </article>
-        </li>
+      <section id="chef-section">
+        <h2 class="section-title">Our chefs</h2>
+        <ul>
+          <li>
+            <article>
+              <h3>Niomi</h3>
+              <p>Hi I'm Niomi</p>
+              <p>
+                I've been a baker for more than 10 years and I love working for
+                Modern bakery
+              </p>
+              <p>I will be sure to make something deliciuos for you!</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Adam</h3>
+              <p>Hi, I'm Adam</p>
+              <p>My grandmother has made me fall in love with baking</p>
+              <p>
+                Modern bakery is the place that respects the old traditions
+                while remaining modern
+              </p>
+            </article>
+          </li>
+        </ul>
       </section>
-      <section>
-        <h2>Types</h2>
+      <section id="franchise-section">
+        <h2 class="section-title">Types</h2>
         <ul>
           <li>
             <article>
@@ -82,13 +89,23 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Open a franchise</h2>
+      <section id="contact-section">
+        <h2 class="section-title">Open a franchise</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
+          width="600"
+          height="600"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
       <nav>
-        <a href=""> <img src="./images/logo.svg" alt="Logo" /> </a>
+        <a href="">
+          <img src="./images/logo_bakery.svg" alt="Logo" />
+        </a>
         <ul>
           <li><a href="#">Franchise</a></li>
           <li><a href="#">Our traditions</a></li>
@@ -110,17 +127,13 @@
             >
           </li>
           <li>
-            <a href="#">
-              <!-- facebookicon -->
-            </a>
+            <a href="/"><!-- facebookicon --></a>
           </li>
           <li>
-            <a href="#">
-              <!-- instagramicon -->
-            </a>
+            <a href="#"><!-- facebookicon --></a>
           </li>
-          <a href="#" target="_blank">Privacy Policy</a>
-          <p>All rights Reserved</p>
+          <li><a href="#" target="_blank">Privacy Policy</a></li>
+          <li><p>&copy;All rights Reserved</p></li>
         </ul>
       </address>
     </footer>
