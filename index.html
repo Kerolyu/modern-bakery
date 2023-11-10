@@ -5,137 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakeries</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html">
-          <img src="./images/logo_bakery.svg" alt="Logo" />
-        </a>
-        <ul>
-          <li>
-            <a class="menu-header" href="#traditions-section">Our traditions</a>
-          </li>
-          <li><a class="menu-header" href="#chef-section">Our chefs</a></li>
-          <li>
-            <a class="menu-header" href="#franchise-section">Franchise Types</a>
-          </li>
-          <li><a class="menu-header" href="#contact-section">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="button">Book a call</button>
+      <div class="container">
+        <div class="header">
+          <nav class="header-nav">
+            <a href="index.html">
+              <img src="./images/logo_bakery.svg" alt="Logo" />
+            </a>
+            <ul class="header-list">
+              <li>
+                <a class="menu-header" href="#traditions-section"
+                  >Our traditions</a
+                >
+              </li>
+              <li><a class="menu-header" href="#chef-section">Our chefs</a></li>
+              <li>
+                <a class="menu-header" href="#franchise-section"
+                  >Franchise Types</a
+                >
+              </li>
+              <li>
+                <a class="menu-header" href="#contact-section">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="button">Book a call</button>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="hero-section">
         <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
       </section>
-      <section id="traditions-section">
-        <ul class="benefits-list">
-          <li>Market demand</li>
-          <li>Reasonable prices</li>
-          <li>10 years of experience</li>
-        </ul>
-        <h2 class="section-title">Our Best <span>Bakers</span></h2>
-        <p>
-          <span>shop bakery</span> - is a new type of bakery that took
-          principles of traditional bakery and made it work.
-        </p>
-        <p>
-          We work fast and efficiently. 5 Minutes and your order is ready. And
-          like any traditional bakery you can find fresh pastry
-          <span>as early as 5am.</span>
-        </p>
-        <img src="./images/baker-min.jpg" alt="BakerMan" />
+      <section class="benefits-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our benefits</h2>
+          <ul class="benefits-list">
+            <li>Market demand</li>
+            <li>Reasonable prices</li>
+            <li>10 years of experience</li>
+          </ul>
+        </div>
       </section>
-      <section id="chef-section">
-        <h2 class="section-title">Our chefs</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Niomi</h3>
-              <p>Hi I'm Niomi</p>
-              <p>
-                I've been a baker for more than 10 years and I love working for
-                Modern bakery
+      <section class="traditions-section section" id="traditions-section">
+        <div class="container">
+          <div class="traditions-container">
+            <div class="traditions-text">
+              <h2 class="traditions-title">Our Best <span>Traditions</span></h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> - is a new type
+                of bakery that took principles of traditional bakery and made it
+                work.
               </p>
-              <p>I will be sure to make something deliciuos for you!</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Adam</h3>
-              <p>Hi, I'm Adam</p>
-              <p>My grandmother has made me fall in love with baking</p>
-              <p>
-                Modern bakery is the place that respects the old traditions
-                while remaining modern
+              <p class="traditions-text">
+                We work fast and efficiently. 5 Minutes and your order is ready.
+                And like any traditional bakery you can find fresh pastry
+                <span class="brand">as early as 5am.</span>
               </p>
-            </article>
-          </li>
-        </ul>
+            </div>
+            <img src="images/baker.png" alt="BakerMan" />
+          </div>
+        </div>
       </section>
-      <section id="franchise-section">
-        <h2 class="section-title">Types</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Walrus</h3>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Horseshoe</h3>
-            </article>
-          </li>
-        </ul>
+      <section class="section" id="chef-section">
+        <div class="container">
+          <h2 class="chefs-title section-title">Our chefs</h2>
+          <ul>
+            <li>
+              <article>
+                <h3 class="chef-name">Niomi</h3>
+                <p>Hi I'm Niomi</p>
+                <p>
+                  I've been a baker for more than 10 years and I love working
+                  for Modern bakery
+                </p>
+                <p>I will be sure to make something deliciuos for you!</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3 class="chef-name">Adam</h3>
+                <p>Hi, I'm Adam</p>
+                <p>My grandmother has made me fall in love with baking</p>
+                <p>
+                  Modern bakery is the place that respects the old traditions
+                  while remaining modern
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="contact-section">
-        <h2 class="section-title">Open a franchise</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
-          width="600"
-          height="600"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <section class="section" id="franchise-section">
+        <h2 class="types-title section-title">Types</h2>
+        <div class="container">
+          <ul class="card-list">
+            <li>
+              <article class="card-box">
+                <h3 class="card">Walrus</h3>
+                <div class="card-description">
+                  <p>Square meters: up to 120 m2</p>
+                  <p>Menu: extended menu</p>
+                  <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                  <p>Positions : yes</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-box">
+                <h3 class="card">Horseshoe</h3>
+                <div class="card-description">
+                  <p>Square meters: up to 180 m2</p>
+                  <p>Menu: extended menu</p>
+                  <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                  <p>Positions : yes</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-box">
+                <h3 class="card">Handlebar</h3>
+                <div class="card-description">
+                  <p>Square meters: up to 150 m2</p>
+                  <p>Menu: extended menu</p>
+                  <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                  <p>Positions : yes</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="contact-section">
+        <div class="container">
+          <h2 class="contact-section section-title">Open a franchise</h2>
+          <p>Fill in a form to get in touch</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
+            width="600"
+            height="600"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer>
-      <nav>
-        <a href="">
-          <img src="./images/logo_bakery.svg" alt="Logo" />
-        </a>
-        <ul>
-          <li><a href="#">Franchise</a></li>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul>
-          <li><a href="tel:+38084746584">+38084746584</a></li>
-          <li>
-            <a href="mailto:franchise@modernbakery.com"
-              >franchise@modernbakery.com</a
-            >
-          </li>
-          <li>
-            <a href="https://maps.app.goo.gl/qCimnaRVbw6dQsWYA" target="_blank"
-              >Street Wall 23</a
-            >
-          </li>
-          <li>
-            <a href="/"><!-- facebookicon --></a>
-          </li>
-          <li>
-            <a href="#"><!-- facebookicon --></a>
-          </li>
-          <li><a href="#" target="_blank">Privacy Policy</a></li>
-          <li><p>&copy;All rights Reserved</p></li>
-        </ul>
-      </address>
+      <div class="container">
+        <nav>
+          <a href="">
+            <img src="./images/logo_bakery.svg" alt="Logo" />
+          </a>
+          <ul>
+            <li><a class="footer-menu" href="#">Franchise</a></li>
+            <li><a class="footer-menu" href="#">Our traditions</a></li>
+            <li><a class="footer-menu" href="#">Formats</a></li>
+            <li><a class="footer-menu" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul>
+            <li>
+              <a class="footer-contact" href="tel:+38084746584">+38084746584</a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:franchise@modernbakery.com"
+                >franchise@modernbakery.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-contact"
+                href="https://maps.app.goo.gl/qCimnaRVbw6dQsWYA"
+                target="_blank"
+                >Street Wall 23</a
+              >
+            </li>
+            <li>
+              <a class="footer-contact" href="/"><!-- facebookicon --></a>
+            </li>
+            <li>
+              <a class="footer-contact" href="#"><!-- facebookicon --></a>
+            </li>
+            <li>
+              <a class="footer-menu" href="#" target="_blank">Privacy Policy</a>
+            </li>
+            <li><p class="footer-copyright">&copy;All rights Reserved</p></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
