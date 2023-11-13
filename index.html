@@ -71,38 +71,56 @@
           </div>
         </div>
       </section>
-      <section class="section" id="chef-section">
+      <section class="chef-section" id="chef-section">
         <div class="container">
-          <h2 class="chefs-title section-title">Our chefs</h2>
-          <ul>
-            <li>
-              <article>
-                <h3 class="chef-name">Niomi</h3>
-                <p>Hi I'm Niomi</p>
-                <p>
-                  I've been a baker for more than 10 years and I love working
-                  for Modern bakery
-                </p>
-                <p>I will be sure to make something deliciuos for you!</p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h3 class="chef-name">Adam</h3>
-                <p>Hi, I'm Adam</p>
-                <p>My grandmother has made me fall in love with baking</p>
-                <p>
-                  Modern bakery is the place that respects the old traditions
-                  while remaining modern
-                </p>
-              </article>
-            </li>
-          </ul>
+          <h2 class="chefs-title section-title centered">Our chefs</h2>
+          <div class="chef-container">
+            <ul>
+              <li>
+                <article>
+                  <img
+                    class="chef-photo"
+                    src="/images/chef-photo.png"
+                    alt="photo of a chef"
+                  />
+                  <h3 class="chef-name">Niomi</h3>
+                  <p>Hi I'm Niomi</p>
+                  <p>
+                    I've been a baker for more than 10 years and I love working
+                    for Modern bakery
+                  </p>
+                  <p>I will be sure to make something deliciuos for you!</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <img
+                    class="chef-photo"
+                    src="/images/jason-chef.png"
+                    alt="photo of a chef"
+                  />
+
+                  <h3 class="chef-name">Jason</h3>
+                  <p>Hi, I'm Jason</p>
+                  <p>My grandmother has made me fall in love with baking</p>
+                  <p>
+                    Modern bakery is the place that respects the old traditions
+                    while remaining modern
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section" id="franchise-section">
-        <h2 class="types-title section-title">Types</h2>
+        <h2 class="types-title section-title centered">Types</h2>
         <div class="container">
+          <button class="arrow-button" type="button">
+            <svg width="22" height="22">
+              <use href="/images/icons.svg#icon-arrow_only"></use>
+            </svg>
+          </button>
           <ul class="card-list">
             <li>
               <article class="card-box">
@@ -138,6 +156,11 @@
               </article>
             </li>
           </ul>
+          <button class="arrow-button" type="button">
+            <svg width="22" height="22">
+              <use href="/images/icons.svg#icon-arrow_only"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contact-section">
@@ -155,7 +178,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="">
@@ -171,26 +194,38 @@
         <address>
           <ul>
             <li>
-              <a class="footer-contact" href="tel:+38084746584">+38084746584</a>
+              <a class="footer-contact footer-menu" href="tel:+38084746584"
+                >+38084746584</a
+              >
             </li>
             <li>
-              <a class="footer-contact" href="mailto:franchise@modernbakery.com"
+              <a
+                class="footer-contact footer-menu"
+                href="mailto:franchise@modernbakery.com"
                 >franchise@modernbakery.com</a
               >
             </li>
             <li>
               <a
-                class="footer-contact"
+                class="footer-contact footer-menu"
                 href="https://maps.app.goo.gl/qCimnaRVbw6dQsWYA"
                 target="_blank"
                 >Street Wall 23</a
               >
             </li>
             <li>
-              <a class="footer-contact" href="/"><!-- facebookicon --></a>
+              <a class="footer-contact" href="/">
+                <svg class="social-media" width="32" height="32">
+                  <use href="/images/icons.svg#icon-facebook_logo"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a class="footer-contact" href="#"><!-- facebookicon --></a>
+              <a class="footer-contact" href="#">
+                <svg class="social-media" width="32" height="32">
+                  <use href="/images/icons.svg#icon-insta_logo"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a class="footer-menu" href="#" target="_blank">Privacy Policy</a>
