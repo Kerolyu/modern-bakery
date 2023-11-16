@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="masterheader">
+      <div class="container header">
         <div class="header">
           <nav class="header-nav">
             <a href="index.html">
-              <img src="./images/logo_bakery.svg" alt="Logo" />
+              <img src="./images/logo_bakery_light.png" alt="Logo" />
             </a>
             <ul class="header-list">
               <li>
@@ -33,7 +33,9 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="button">Book a call</button>
+          <button class="button modal-btn-open" class="button">
+            Book a call
+          </button>
         </div>
       </div>
     </header>
@@ -67,7 +69,14 @@
                 <span class="brand">as early as 5am.</span>
               </p>
             </div>
-            <img src="images/baker.png" alt="BakerMan" />
+            <div class="baker-photo">
+              <img
+                src="images/baker.png"
+                alt="BakerMan"
+                height="550px"
+                width="auto"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -75,38 +84,43 @@
         <div class="container">
           <h2 class="chefs-title section-title centered">Our chefs</h2>
           <div class="chef-container">
-            <ul>
-              <li>
-                <article>
+            <ul class="chef-list">
+              <li class="chef-item">
+                <article class="chef-card">
                   <img
                     class="chef-photo"
                     src="/images/chef-photo.png"
                     alt="photo of a chef"
                   />
-                  <h3 class="chef-name">Niomi</h3>
-                  <p>Hi I'm Niomi</p>
-                  <p>
-                    I've been a baker for more than 10 years and I love working
-                    for Modern bakery
-                  </p>
-                  <p>I will be sure to make something deliciuos for you!</p>
+                  <div>
+                    <h3 class="chef-name">Niomi</h3>
+                    <p>Hi I'm Niomi</p>
+                    <p>
+                      I've been a baker for <br />
+                      more than 10 years and <br />
+                      I love working for Modern bakery
+                    </p>
+                    <p>I will be sure to make something deliciuos for you!</p>
+                  </div>
                 </article>
               </li>
-              <li>
-                <article>
+              <li class="chef-item">
+                <article class="chef-card">
                   <img
                     class="chef-photo"
                     src="/images/jason-chef.png"
                     alt="photo of a chef"
                   />
 
-                  <h3 class="chef-name">Jason</h3>
-                  <p>Hi, I'm Jason</p>
-                  <p>My grandmother has made me fall in love with baking</p>
-                  <p>
-                    Modern bakery is the place that respects the old traditions
-                    while remaining modern
-                  </p>
+                  <div>
+                    <h3 class="chef-name">Jason</h3>
+                    <p>Hi, I'm Jason</p>
+                    <p>My grandmother has made me fall in love with baking</p>
+                    <p>
+                      Modern bakery is the place that respects the old
+                      traditions while remaining modern
+                    </p>
+                  </div>
                 </article>
               </li>
             </ul>
@@ -114,126 +128,231 @@
         </div>
       </section>
       <section class="section" id="franchise-section">
-        <h2 class="types-title section-title centered">Types</h2>
         <div class="container">
-          <button class="arrow-button" type="button">
-            <svg width="22" height="22">
-              <use href="/images/icons.svg#icon-arrow_only"></use>
-            </svg>
-          </button>
-          <ul class="card-list">
-            <li>
-              <article class="card-box">
-                <h3 class="card">Walrus</h3>
-                <div class="card-description">
-                  <p>Square meters: up to 120 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
-                  <p>Positions : yes</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="card-box">
-                <h3 class="card">Horseshoe</h3>
-                <div class="card-description">
-                  <p>Square meters: up to 180 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
-                  <p>Positions : yes</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="card-box">
-                <h3 class="card">Handlebar</h3>
-                <div class="card-description">
-                  <p>Square meters: up to 150 m2</p>
-                  <p>Menu: extended menu</p>
-                  <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
-                  <p>Positions : yes</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="arrow-button" type="button">
-            <svg width="22" height="22">
-              <use href="/images/icons.svg#icon-arrow_only"></use>
-            </svg>
-          </button>
+          <h2 class="types-title section-title centered">Types</h2>
+          <div class="container-carousel">
+            <button class="arrow-button" type="button">
+              <svg width="22" height="22">
+                <use href="/images/icons.svg#icon-arrow_only"></use>
+              </svg>
+            </button>
+            <ul class="card-list">
+              <li>
+                <article class="card-box">
+                  <h3 class="card">Walrus</h3>
+                  <div class="card-description">
+                    <p>Square meters: up to 120 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                    <p>Positions : yes</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="card-box">
+                  <h3 class="card">Horseshoe</h3>
+                  <div class="card-description">
+                    <p>Square meters: up to 180 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                    <p>Positions : yes</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="card-box">
+                  <h3 class="card">Handlebar</h3>
+                  <div class="card-description">
+                    <p>Square meters: up to 150 m2</p>
+                    <p>Menu: extended menu</p>
+                    <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                    <p>Positions : yes</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="arrow-button next" type="button">
+              <svg width="22" height="22">
+                <use href="/images/icons.svg#icon-arrow_only"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-section section-title">Open a franchise</h2>
-          <p>Fill in a form to get in touch</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
-            width="600"
-            height="600"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">Open a franchise</h2>
+              <p>Fill in a form to get in touch</p>
+              <form name="contact-form" autocomplete="off" novalidate>
+                <div class="form-input">
+                  <input
+                    class="input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    required="required"
+                  />
+                  <label class="input-label" for="user-name"> Full Name</label>
+                </div>
+
+                <div class="form-input">
+                  <input
+                    class="input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    required="required"
+                  />
+                  <label class="input-label" for="user-tel">
+                    Phone number</label
+                  >
+                </div>
+
+                <div class="form-input">
+                  <input
+                    class="input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    required="required"
+                  /><label class="input-label" for="user-email">
+                    E-mail address</label
+                  >
+                </div>
+
+                <button class="form-button button" type="submit">Submit</button>
+                <p class="form-text">
+                  By submitting this information I accept
+                  <a class="form-text-link" href="#">privacy policy</a>
+                </p>
+              </form>
+            </div>
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
+              width="600"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="">
-            <img src="./images/logo_bakery.svg" alt="Logo" />
-          </a>
-          <ul>
-            <li><a class="footer-menu" href="#">Franchise</a></li>
-            <li><a class="footer-menu" href="#">Our traditions</a></li>
-            <li><a class="footer-menu" href="#">Formats</a></li>
-            <li><a class="footer-menu" href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="footer-contact footer-menu" href="tel:+38084746584"
-                >+38084746584</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer-contact footer-menu"
-                href="mailto:franchise@modernbakery.com"
-                >franchise@modernbakery.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="footer-contact footer-menu"
-                href="https://maps.app.goo.gl/qCimnaRVbw6dQsWYA"
-                target="_blank"
-                >Street Wall 23</a
-              >
-            </li>
-            <li>
-              <a class="footer-contact" href="/">
-                <svg class="social-media" width="32" height="32">
-                  <use href="/images/icons.svg#icon-facebook_logo"></use>
-                </svg>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="">
+                <img src="./images/logo_bakery.svg" alt="Logo" />
               </a>
-            </li>
-            <li>
-              <a class="footer-contact" href="#">
-                <svg class="social-media" width="32" height="32">
-                  <use href="/images/icons.svg#icon-insta_logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
+            </div>
+            <ul class="footer-list">
+              <li><a class="footer-menu" href="#">Franchise</a></li>
+              <li><a class="footer-menu" href="#">Our traditions</a></li>
+              <li><a class="footer-menu" href="#">Formats</a></li>
+              <li><a class="footer-menu" href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li>
+                <a class="footer-contact footer-menu" href="tel:+38084746584"
+                  >+38084746584</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-contact footer-menu"
+                  href="mailto:franchise@modernbakery.com"
+                  >franchise@modernbakery.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-contact footer-menu"
+                  href="https://maps.app.goo.gl/qCimnaRVbw6dQsWYA"
+                  target="_blank"
+                  >Street Wall 23</a
+                >
+              </li>
+              <li>
+                <a class="footer-contact" href="/">
+                  <svg class="social-media" width="32" height="32">
+                    <use href="/images/icons.svg#icon-facebook_logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-contact" href="#">
+                  <svg class="social-media" width="32" height="32">
+                    <use href="/images/icons.svg#icon-insta_logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="privacy-policy">
               <a class="footer-menu" href="#" target="_blank">Privacy Policy</a>
-            </li>
-            <li><p class="footer-copyright">&copy;All rights Reserved</p></li>
-          </ul>
-        </address>
+              <p class="footer-copyright">&copy;All rights Reserved</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="form-title section-title centered">Book a Call</h2>
+        <p class="form-text-centered">
+          Leave a form and our specialist will get in touch
+        </p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-input">
+            <input
+              class="input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              required="required"
+            />
+            <label class="input-label" for="user-name"> Name</label>
+          </div>
+
+          <div class="form-input">
+            <input
+              class="input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              required="required"
+            />
+            <label class="input-label" for="user-tel"> Phone number</label>
+          </div>
+
+          <div class="form-input">
+            <input
+              class="input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              required="required"
+            /><label class="input-label" for="user-email">
+              E-mail address</label
+            >
+          </div>
+
+          <button class="form-button button" type="submit">Book a call</button>
+          <p class="form-text">
+            By clicking this button I accept
+            <a class="form-text-link" href="#">privacy policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>
