@@ -319,28 +319,16 @@ address {
 }
 
 .card {
+  color: var(--color-privary-light);
   font-size: 24px;
   font-weight: 600;
 }
 .card-description {
+  color: var(--color-privary-light);
   font-size: 14px;
   font-weight: 300;
 }
-.card-box {
-  height: 444px;
-  width: 320px;
-  padding: 24px;
-  border: 1px solid var(--color-brand);
-  border-radius: 20px;
-  transition: transform 0.5s;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background: linear-gradient(
-    180deg,
-    rgba(238, 237, 245, 0.2091211484593838) 0%,
-    rgba(11, 29, 33, 1) 95%
-  );
-}
+
 .card-box:hover {
   transform: scale(1.05);
 }
@@ -533,4 +521,37 @@ address {
 }
 .form-title {
   margin-bottom: 20px;
+}
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  height: 444px;
+  width: 320px;
+  padding: 24px;
+  border: 1px solid var(--color-brand);
+  border-radius: 20px;
+  transition: transform 0.5s;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    180deg,
+    rgba(238, 237, 245, 0.2091211484593838) 0%,
+    rgba(11, 29, 33, 1) 95%
+  );
+}
+.contact-section__form-fields {
+  position: relative;
+  margin-bottom: 24px;
 }

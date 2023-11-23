@@ -4,52 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakeries</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="masterheader">
       <div class="container header">
         <div class="header">
-          <nav class="header-nav">
+          <nav class="header__nav">
             <a href="index.html">
               <img src="./images/logo_bakery_light.png" alt="Logo" />
             </a>
-            <ul class="header-list">
+            <ul class="header__list">
               <li>
-                <a class="menu-header" href="#traditions-section"
+                <a class="header__menu" href="#traditions-section"
                   >Our traditions</a
                 >
               </li>
-              <li><a class="menu-header" href="#chef-section">Our chefs</a></li>
               <li>
-                <a class="menu-header" href="#franchise-section"
+                <a class="header__menu" href="#chef-section">Our chefs</a>
+              </li>
+              <li>
+                <a class="header__menu" href="#franchise-section"
                   >Franchise Types</a
                 >
               </li>
               <li>
-                <a class="menu-header" href="#contact-section">Contact</a>
+                <a class="header__menu" href="#contact-section">Contact</a>
               </li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" class="button">
+          <button class="header__button button modal-btn-open" class="button">
             Book a call
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="/images/icons.svg#icon-menu-alt-1"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="24" height="24">
+                <use href="/images/icons.svg#icon-x"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
+        <button
+          class="hero-section__button button modal-btn-open"
+          class="button"
+        >
+          Book a call
+        </button>
       </section>
       <section class="benefits-section">
         <div class="container">
           <h2 class="visually-hidden">Our benefits</h2>
           <ul class="benefits-list">
-            <li>Market demand</li>
-            <li>Reasonable prices</li>
-            <li>10 years of experience</li>
+            <li class="benefits-list__item">Market demand</li>
+            <li class="benefits-list__item">Reasonable prices</li>
+            <li class="benefits-list__item">10 years of experience</li>
           </ul>
         </div>
       </section>
@@ -69,13 +93,8 @@
                 <span class="brand">as early as 5am.</span>
               </p>
             </div>
-            <div class="baker-photo">
-              <img
-                src="images/baker.png"
-                alt="BakerMan"
-                height="550px"
-                width="auto"
-              />
+            <div class="baker-photo-section">
+              <img class="baker-photo" src="images/baker.jpeg" alt="BakerMan" />
             </div>
           </div>
         </div>
@@ -127,50 +146,160 @@
           </div>
         </div>
       </section>
-      <section class="section" id="franchise-section">
-        <div class="container">
-          <h2 class="types-title section-title centered">Types</h2>
-          <div class="container-carousel">
+
+      <section class="franchise-section" id="franchise-section">
+        <h2 class="types-title section-title centered">Types</h2>
+        <div class="slider container">
+          <div class="swiper-button-prev">
             <button class="arrow-button" type="button">
               <svg width="22" height="22">
                 <use href="/images/icons.svg#icon-arrow_only"></use>
               </svg>
             </button>
-            <ul class="card-list">
-              <li>
+          </div>
+          <div class="container-carousel swiper-container">
+            <ul class="card-list swiper-wrapper">
+              <li class="swiper-slide">
                 <article class="card-box">
-                  <h3 class="card">Walrus</h3>
-                  <div class="card-description">
-                    <p>Square meters: up to 120 m2</p>
-                    <p>Menu: extended menu</p>
-                    <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
-                    <p>Positions : yes</p>
+                  <div class="card-box__container">
+                    <img
+                      class="card-image"
+                      src="images/Walrus.png"
+                      alt="Walrus"
+                    />
+                    <h3 class="card">Walrus</h3>
+                    <div class="card-description">
+                      <p>Square meters: up to 120 m2</p>
+                      <p>Menu: extended menu</p>
+                      <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                      <p>Positions : yes</p>
+                    </div>
                   </div>
                 </article>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <article class="card-box">
-                  <h3 class="card">Horseshoe</h3>
-                  <div class="card-description">
-                    <p>Square meters: up to 180 m2</p>
-                    <p>Menu: extended menu</p>
-                    <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
-                    <p>Positions : yes</p>
+                  <div class="card-box__container">
+                    <img
+                      class="card-image"
+                      src="images/Horseshoe.png"
+                      alt="Horseshoe"
+                    />
+                    <h3 class="card">Horseshoe</h3>
+                    <div class="card-description">
+                      <p>Square meters: up to 180 m2</p>
+                      <p>Menu: extended menu</p>
+                      <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                      <p>Positions : yes</p>
+                    </div>
                   </div>
                 </article>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <article class="card-box">
-                  <h3 class="card">Handlebar</h3>
-                  <div class="card-description">
-                    <p>Square meters: up to 150 m2</p>
-                    <p>Menu: extended menu</p>
-                    <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
-                    <p>Positions : yes</p>
+                  <div class="card-box__container">
+                    <img
+                      class="card-image"
+                      src="images/handlebar.jpeg"
+                      alt="Handlebar"
+                    />
+                    <h3 class="card">Handlebar</h3>
+                    <div class="card-description">
+                      <p>Square meters: up to 150 m2</p>
+                      <p>Menu: extended menu</p>
+                      <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                      <p>Positions : yes</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="card-box">
+                  <div class="card-box__container">
+                    <img
+                      class="card-image"
+                      src="images/Walrus.png"
+                      alt="Walrus"
+                    />
+                    <h3 class="card">Walrus</h3>
+                    <div class="card-description">
+                      <p>Square meters: up to 120 m2</p>
+                      <p>Menu: extended menu</p>
+                      <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                      <p>Positions : yes</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="card-box">
+                  <div class="card-box__container">
+                    <img
+                      class="card-image"
+                      src="images/Horseshoe.png"
+                      alt="Horseshoe"
+                    />
+                    <h3 class="card">Horseshoe</h3>
+                    <div class="card-description">
+                      <p>Square meters: up to 180 m2</p>
+                      <p>Menu: extended menu</p>
+                      <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                      <p>Positions : yes</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="swiper-slide">
+                <article class="card-box">
+                  <div class="card-box__container">
+                    <img
+                      class="card-image"
+                      src="images/handlebar.jpeg"
+                      alt="Handlebar"
+                    />
+                    <h3 class="card">Handlebar</h3>
+                    <div class="card-description">
+                      <p>Square meters: up to 150 m2</p>
+                      <p>Menu: extended menu</p>
+                      <p>Staff: 2 workers, 2 sellers, 2 bakers,</p>
+                      <p>Positions : yes</p>
+                    </div>
                   </div>
                 </article>
               </li>
             </ul>
+            <div class="pagination">
+              <button
+                class="swiper-pagination-bullet"
+                type="button"
+                aria-label="Go to Slide 1"
+              >
+                1
+              </button>
+              <button
+                class="swiper-pagination-bullet"
+                type="button"
+                aria-label="Go to Slide 2"
+              >
+                2
+              </button>
+              <button
+                class="swiper-pagination-bullet"
+                type="button"
+                aria-label="Go to Slide 3"
+              >
+                3
+              </button>
+              <button
+                class="swiper-pagination-bullet"
+                type="button"
+                aria-label="Go to Slide 4"
+              >
+                4
+              </button>
+            </div>
+          </div>
+          <div class="swiper-button-next">
             <button class="arrow-button next" type="button">
               <svg width="22" height="22">
                 <use href="/images/icons.svg#icon-arrow_only"></use>
@@ -179,6 +308,7 @@
           </div>
         </div>
       </section>
+
       <section class="contact-section section" id="contact-section">
         <div class="container">
           <div class="contact-container">
@@ -186,38 +316,46 @@
               <h2 class="contact-title section-title">Open a franchise</h2>
               <p>Fill in a form to get in touch</p>
               <form name="contact-form" autocomplete="off" novalidate>
-                <div class="form-input">
+                <div class="contact-section__form-input field">
                   <input
-                    class="input"
+                    class="field__input"
                     type="text"
                     id="user-name"
                     name="user-name"
                     required="required"
+                    placeholder="Full Name"
                   />
-                  <label class="input-label" for="user-name"> Full Name</label>
+                  <label class="field__label visually-hidden" for="user-name">
+                    Full Name</label
+                  >
                 </div>
 
-                <div class="form-input">
+                <div class="contact-section__form-input field">
                   <input
-                    class="input"
+                    class="field__input"
                     type="tel"
                     id="user-tel"
                     name="user-tel"
                     required="required"
+                    placeholder="Phone Number"
                   />
-                  <label class="input-label" for="user-tel">
+                  <label class="field__label visually-hidden" for="user-tel">
                     Phone number</label
                   >
                 </div>
 
-                <div class="form-input">
+                <div class="contact-section__form-input field">
                   <input
-                    class="input"
+                    class="field__input"
                     type="email"
                     id="user-email"
                     name="user-email"
                     required="required"
-                  /><label class="input-label" for="user-email">
+                    placeholder="E-mail Address"
+                  /><label
+                    class="field__label visually-hidden"
+                    for="user-email"
+                  >
                     E-mail address</label
                   >
                 </div>
@@ -229,15 +367,15 @@
                 </p>
               </form>
             </div>
-            <iframe
-              class="google-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
-              width="600"
-              height="600"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div class="map">
+              <iframe
+                class="google-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.879076800357!2d33.04555031284657!3d34.68300127281297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e73334a3bb6769%3A0x293862fa68f3a350!2sNomad%20Bread%20%26%20Coffee!5e0!3m2!1sen!2s!4v1699434091359!5m2!1sen!2s"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -303,45 +441,55 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+
+    <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="/images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
         <h2 class="form-title section-title centered">Book a Call</h2>
         <p class="form-text-centered">
           Leave a form and our specialist will get in touch
         </p>
         <form name="modal-form" autocomplete="off" novalidate>
-          <div class="form-input">
+          <div class="form-input field">
             <input
-              class="input"
+              class="field__input"
               type="text"
               id="user-name"
               name="user-name"
               required="required"
             />
-            <label class="input-label" for="user-name"> Name</label>
+            <label class="field__label" for="user-name"> Name</label>
           </div>
 
-          <div class="form-input">
+          <div class="form-input field">
             <input
               class="input"
               type="tel"
               id="user-tel"
               name="user-tel"
-              required="required"
+              required
             />
             <label class="input-label" for="user-tel"> Phone number</label>
           </div>
 
-          <div class="form-input">
+          <div class="form-input field">
             <input
               class="input"
-              type="email"
+              type="text"
               id="user-email"
               name="user-email"
               required="required"
-            /><label class="input-label" for="user-email">
-              E-mail address</label
+            />
+            <label class="input-label" for="user-email"> E-mail address</label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox-input" type="checkbox" id="t&c" name="t&c" />
+            <label class="checkbox-label" for="t&c">
+              I definitely agree to T & C</label
             >
           </div>
 
@@ -354,5 +502,8 @@
       </div>
     </div>
     <script src="/js/modal.js"></script>
+    <script src="/js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>

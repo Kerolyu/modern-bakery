@@ -1,0 +1,63 @@
+/* header */
+.masterheader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 24px;
+}
+
+.header {
+    min-width: 430px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    &__nav {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            gap: 40px;
+        }
+
+&__list {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+&__menu {
+    display: none;
+   
+        
+        @media screen and (min-width:$bp-desktop)
+        { display: flex;
+            color: blanchedalmond;
+            text-decoration: none;
+            transition: color 0.2s;
+        
+            &:hover {
+                color: var(--color-brand);
+                font-weight: 600;
+            }
+            
+        }
+}
+&__button{
+     display: none;
+     @media screen and (min-width:$bp-desktop) {
+                display: block; }
+}
+&__burger{
+        background-color: transparent;
+            fill: white;
+            border: 0;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+    @media screen and (min-width:$bp-desktop) {
+            display: none;
+    
+        }
+}
+}

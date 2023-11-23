@@ -1,0 +1,99 @@
+.arrow-button {
+   
+    display: none;
+    
+        @media screen and (min-width:$bp-tablet) {
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                padding: 0;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 1px solid var(--color-primary-dark);
+                cursor: pointer;
+                fill: var(--color-primary-dark);
+                flex-shrink: 0;
+        }
+}
+
+.arrow-button.next {
+    transform: rotate(180deg);
+}
+
+.arrow-button:hover {
+    background-color: var(--color-primary-dark);
+    border: 1px solid var(--color-brand);
+    fill: var(--color-privary-light);
+}
+.swiper-button-next::after{
+display: none;}
+.swiper-button-prev::after {
+    display: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+display: none;   
+ @media screen and (min-width:$bp-tablet) {
+        position: relative !important;
+        }
+}
+
+
+
+
+.swiper-button-next svg,
+.swiper-button-prev svg{
+    width: 18px !important;
+}
+.swiper-slide{
+    flex-shrink: 0 !important;
+}
+
+.swiper-wrapper{
+    min-width: 400px;
+    padding-left: 100px;
+    justify-content: space-between !important;
+        @media screen and (min-width:$bp-desktop) {
+                max-width: 1050px !important;
+
+}
+}
+
+.slider {
+    min-width:480px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @media screen and (min-width:$bp-desktop) {
+            gap: 86px;
+    
+        }
+}
+.swiper-container{
+    padding: 16px;
+    overflow: hidden;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    &__button{
+        background-color: var(--color-brand);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        padding: 0;
+    }
+}
+.swiper-pagination-bullet{
+    background-color: var(--color-brand)!important;
+        width: 12px!important;
+        height: 12px!important;
+        border-radius: 50%!important;
+        padding: 0!important;
+        
+}
