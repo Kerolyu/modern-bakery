@@ -53,7 +53,6 @@ display: none;
 
 .swiper-wrapper{
     min-width: 400px;
-    padding-left: 100px;
     justify-content: space-between !important;
         @media screen and (min-width:$bp-desktop) {
                 max-width: 1050px !important;
@@ -62,7 +61,6 @@ display: none;
 }
 
 .slider {
-    min-width:480px;
     display: flex;
     align-items: center;
     gap: 16px;

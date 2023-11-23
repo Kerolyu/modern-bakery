@@ -8,16 +8,23 @@
 }
 
 .header {
-    min-width: 430px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: none;
     width: 100%;
+    @media screen and (min-width:$bp-desktop){
+        gap: 40px;
+    }
+    
     &__nav {
             display: flex;
             flex-grow: 1;
             align-items: center;
-            gap: 40px;
+            gap: none;
+            @media screen and (min-width:$bp-desktop) {
+                    gap: 40px;
+                }
         }
 
 &__list {
@@ -58,6 +65,9 @@
     @media screen and (min-width:$bp-desktop) {
             display: none;
     
+        }
+        &__logo{
+            flex-grow: 1;
         }
 }
 }
