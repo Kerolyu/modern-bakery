@@ -1,5 +1,6 @@
 .mobile-menu{
     position:fixed;
+    padding: 48px 24px;
     top: 0;
     left: 0;
     right: 0;
@@ -19,5 +20,12 @@
         border: none;
     
     }
-
+&__list{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 24px;
+    align-items: flex-start;
+}
 }
