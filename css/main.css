@@ -1254,11 +1254,11 @@ address {
   background-color: var(--color-privary-light);
   border-radius: 32px;
   padding: 48px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 @media screen and (min-width: 768px) {
   .modal {
-    padding: 64px;
+    padding: 128px;
   }
 }
 
