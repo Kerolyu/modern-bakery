@@ -1,73 +1,72 @@
 /* header */
 .masterheader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 24px;
 }
 
 .header {
-    padding: 0 16px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  @media screen and (min-width: $bp-desktop) {
+    gap: 40px;
+  }
+
+  &__nav {
+    width: 100%;
     display: flex;
+    flex-grow: 1;
     align-items: center;
     gap: none;
-    width: 100%;
-    @media screen and (min-width:$bp-desktop){
-        gap: 40px;
+    @media screen and (min-width: $bp-desktop) {
+      gap: 40px;
     }
-    
-    &__nav {
-            display: flex;
-            flex-grow: 1;
-            align-items: center;
-            gap: none;
-            @media screen and (min-width:$bp-desktop) {
-                    gap: 40px;
-                }
-        }
+  }
 
-&__list {
+  &__list {
     display: flex;
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
-}
-&__menu {
+  }
+  &__menu {
     display: none;
-   
-        
-        @media screen and (min-width:$bp-desktop)
-        { display: flex;
-            color: blanchedalmond;
-            text-decoration: none;
-            transition: color 0.2s;
-        
-            &:hover {
-                color: var(--color-brand);
-                font-weight: 600;
-            }
-            
-        }
-}
-&__button{
-     display: none;
-     @media screen and (min-width:$bp-desktop) {
-                display: block; }
-}
-&__burger{
-        background-color: transparent;
-            fill: white;
-            border: 0;
-            width: 24px;
-            height: 24px;
-            padding: 0;
-    @media screen and (min-width:$bp-desktop) {
-            display: none;
-    
-        }
-        &__logo{
-            flex-grow: 1;
-        }
-}
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      color: blanchedalmond;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--color-brand);
+        font-weight: 600;
+      }
+    }
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__burger {
+    background-color: transparent;
+    fill: white;
+    border: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+    &__logo {
+      flex-grow: 1;
+    }
+  }
 }

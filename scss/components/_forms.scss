@@ -1,34 +1,27 @@
 .contact-section__form-fields {
-    position: relative;
-    margin-bottom: 24px;
+  position: relative;
+  margin-bottom: 24px;
 }
 
 .input {
-    position: relative;
-   &__control {
-            padding: 16px 42px;
-            width: 100%;
-            border: 1px solid var(--color-brand);
-            border-radius: 8px;
-            background-color: transparent;
-            font-size: 18px;
-    
-        }
-                &__label {
-                    left: 42px;
-                    top: 16px;
-                    position: absolute;
-                    font-size: 16px;
-                    transition: 0.4s;
-                    color: #31261a;
-                }
+  position: relative;
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--color-brand);
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 18px;
+  }
+  &__label {
+    left: 42px;
+    top: 16px;
+    position: absolute;
+    font-size: 16px;
+    transition: 0.4s;
+    color: #31261a;
+  }
 }
-
-
-
-
-
-
 
 // .input:focus {
 //     border: 1px solid var(--color-primary-dark);
@@ -44,43 +37,43 @@
 //     color: #31261a;
 // }
 
-
-
-.form-input input:valid+.input-label,
-.form-input input:focus+.input-label {
-    transform: translate(-16px, -30px);
-    color: black;
-    pointer-events: none;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 0 16px;
-    font-size: 14px;
-    background-color: var(--color-privary-light);
+.form-input input:valid + .input-label,
+.form-input input:focus + .input-label {
+  transform: translate(-16px, -30px);
+  color: black;
+  pointer-events: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 16px;
+  font-size: 14px;
+  background-color: var(--color-privary-light);
 }
 
 .form-button {
-    display: block;
-    margin: 0 auto 24px;
+  display: block;
+  margin: 0 auto 24px;
 }
 
 .form-text {
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  @media screen and (min-width: $bp-desktop) {
     max-width: 220px;
-    margin: 0 auto;
+  }
 }
 
 .form-text-link {
-    color: var(--color-primary-dark);
-    text-underline-offset: 5px;
+  color: var(--color-primary-dark);
+  text-underline-offset: 5px;
 }
 
 .form-text-centered {
-    text-align: center;
-    margin-bottom: 42px;
+  text-align: center;
+  margin-bottom: 42px;
 }
 
 .form-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }

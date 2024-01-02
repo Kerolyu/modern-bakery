@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakeries</title>
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,10 +38,10 @@
                 <a class="header__menu" href="#contact-section">Contact</a>
               </li>
             </ul>
+            <button class="header__button button modal-btn-open" class="button">
+              Book a call
+            </button>
           </nav>
-          <button class="header__button button modal-btn-open" class="button">
-            Book a call
-          </button>
           <button class="header__burger menu-btn-open" type="button">
             <svg width="24" height="24">
               <use href="/images/icons.svg#icon-menu-alt-1"></use>
@@ -69,12 +69,14 @@
     <main>
       <section class="hero-section">
         <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
-        <button
-          class="hero-section__button button modal-btn-open"
-          class="button"
-        >
-          Book a call
-        </button>
+        <a href="#contact-section">
+          <button
+            class="hero-section__button button modal-hero-open"
+            class="button"
+          >
+            Book a call
+          </button>
+        </a>
       </section>
       <section class="benefits-section">
         <div class="container">
